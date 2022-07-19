@@ -117,6 +117,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.7-aarch64-linux)
       racc (~> 1.4)
+    nokogiri (1.13.7-x86_64-linux)
+      racc (~> 1.4)
     pg (1.4.1)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -163,6 +165,10 @@ GEM
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
     strscan (3.0.3)
+    tailwindcss-rails (2.0.10-aarch64-linux)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.10-x86_64-linux)
+      railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.0)
     turbo-rails (1.1.1)
@@ -183,6 +189,7 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -194,6 +201,7 @@ DEPENDENCIES
   rails (~> 7.0.3, >= 7.0.3.1)
   sprockets-rails
   stimulus-rails
+  tailwindcss-rails (~> 2.0)
   turbo-rails
   tzinfo-data
   web-console
