@@ -6,6 +6,8 @@ Example [Ruby on Rails](http://rubyonrails.org) application deployed to AWS with
 
 ```sh
 rails new copiloting_rails --database=postgresql
+cd copiloting_rails
+copilot app init copiloting-rails
 ```
 
 ## To do
