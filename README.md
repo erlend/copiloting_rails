@@ -1,3 +1,5 @@
+![Website status](https://img.shields.io/website?down_color=red&down_message=offline&style=for-the-badge&up_color=green&up_message=online&url=http%3A%2F%2Fcopil-publi-15f0mgpt6v3bv-814748119.us-east-1.elb.amazonaws.com)
+
 # Copiloting Rails
 
 Example [Ruby on Rails](http://rubyonrails.org) application deployed to AWS with [copilot-cli](https://aws.github.io/copilot-cli/).
