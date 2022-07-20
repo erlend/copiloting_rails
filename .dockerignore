@@ -1,0 +1,30 @@
+# Ignore git files
+/.git
+/.gitattributes
+/.gitignore
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore development files
+/Procfile.dev
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Ignore docker files
+/.dockerignore
+/Dockerfile
+/docker-compose*.yml
+
+# Ignore uploaded files in development.
+/storage
+
+# Ignore all logfiles and tempfiles.
+/log
+/tmp
+
+# Ignore asset build files
+/public/assets
+/app/assets/builds/*
+!/app/assets/builds/.keep

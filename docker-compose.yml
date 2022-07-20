@@ -1,0 +1,36 @@
+version: "2.1"
+
+volumes:
+  ruby_gems:
+  postgresql_data:
+
+x-app: &app
+  build:
+    context: .
+    target: dev
+  environment:
+    DATABASE_URL: postgresql://postgres:postgres@database
+    RAILS_DEVELOPMENT_HOSTS: ${RAILS_DEVELOPMENT_HOSTS:-}
+  volumes:
+    - .:$PWD
+    - ruby_gems:/usr/local/bundle
+  working_dir: $PWD
+
+services:
+  web:
+    <<: *app
+    command: bin/rails server --binding=0.0.0.0
+    ports:
+      - 3000:3000
+
+  css:
+    <<: *app
+    command: bin/rails tailwindcss:watch
+    tty: true
+
+  database:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
